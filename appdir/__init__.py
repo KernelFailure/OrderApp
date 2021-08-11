@@ -1,5 +1,5 @@
 from flask import Flask
 
-#appdir = Flask(__name__)
+application = Flask(__name__)
 
 from appdir import routes
