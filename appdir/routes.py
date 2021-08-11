@@ -1,4 +1,5 @@
-from app import app
+#from appdir import app
+from main import app
 
 
 @app.route('/')

@@ -1,13 +1,14 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from flask import Flask
 
 
+app = Flask(__name__)
 
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-from app import app
+@app.route('/')
+@app.route('/index')
+def index():
+    return "Hello Heroku :P"
+#from appdir import routes
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
+
